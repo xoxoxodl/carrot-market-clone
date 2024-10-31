@@ -1,10 +1,25 @@
 @import "header.css";
 @import "footer.css";
 @import "main.css";
+
+:root {
+  --button-primary: #fe6f0f;
+  --button-hover: rgba(254, 111, 15, 0.8);
+}
+
+
 body {
   font-family: "Helvetica Neue";
 }
 
+<<<<<<< Updated upstream
+=======
+@media screen and (max-width: 500px) {
+  .media-into-msg {
+    opacity: 0;
+  }
+}
+>>>>>>> Stashed changes
 
 .media-into-msg {
   background-color: salmon;
