@@ -22,6 +22,7 @@ footer {
     align-items: center;
     padding: 0px 15px;
     margin: 0px 5px;
+    cursor: pointer;
 }
 
 .footer-icons__img{
@@ -29,10 +30,30 @@ footer {
     display: flex;
     align-items: center;
     padding: 0px 15px;
+
 }
 
 .footer-icons__desc {
     font-size: 7px;
     padding: 0px 15px;
     font-weight: bold;
+}
+
+@keyframes icons-float { 
+    0%{
+        transform: translateY(0px);
+    } 30%{
+        transform: translateY(-5px);
+    } 100%{
+        transform: translateY(0px)
+    }
+    
+}
+
+.foooter-icons__img{
+    width: 30px;
+}
+
+.footer-icons:hover .foooter-icons__img{
+    animation: 2s icons-float;
 }
