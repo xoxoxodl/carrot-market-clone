@@ -1,0 +1,77 @@
+<script>
+  let hour = new Date().getHours();
+  let min = new Date().getMinutes();
+
+  setInterval(()=> (min=min+1), 1000);
+</script>
+
+<header>
+  <div class="info-bar">
+    <div class="info-bar__time">{hour}:{min}</div>
+    <div class="info-bar__icons">
+      <img src="assets/chart-bar.svg" alt="char-bar" />
+      <img src="assets/wifi.svg" alt="wifi" /> 
+      <img src="assets/battery.svg" alt="battery" />
+    </div>
+  </div>
+
+  <div class="menu-bar">
+    <div class="menu-bar__location">
+      <span>Chelsea</span>
+      <img src="assets/down-arrow.svg" alt="down-arrow" />
+    </div>
+    <div class="menu-bar__icons">
+      <img src="assets/magnifier.svg" alt="magnifier" />
+      <img src="assets/hamburger.svg" alt="hamburger" />
+      <img src="assets/noti.svg" alt="notification" />
+    </div>
+  </div>
+</header>
+
+<main>
+  <a class="write-btn" href="#/write"> + Write </a>
+</main>
+
+<footer>
+  <div class="footer-block">
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/home.svg" alt="home" />
+      </div>
+      <span class="footer-icons__desc">Home</span>
+    </div>
+
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/page.svg" alt="page" />
+      </div>
+      <span class="footer-icons__desc">Neighborhood</span>
+    </div>
+
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/location.svg" alt="location" />
+      </div>
+      <span class="footer-icons__desc">Nearby</span>
+    </div>
+
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/chat.svg" alt="chat" />
+      </div>
+      <span class="footer-icons__desc">Chat</span>
+    </div>
+
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/user.svg" alt="user" />
+      </div>
+      <span class="footer-icons__desc">My</span>
+    </div>
+  </div>
+</footer>
+
+<div class="media-into-msg">Reduce your screen size</div>
+
+<style>
+</style>
